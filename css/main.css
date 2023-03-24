@@ -1,0 +1,2478 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+.equipolck{
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: black;
+  font-size: 83px;
+  display: flex;
+  justify-content: center;
+  background-color: deepskyblue;
+  width: 294px;
+  /* align-items: center; */
+  margin-left: 600px;
+  margin-top: 70px;
+  border-radius: 68px;
+}
+
+
+:root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.bg-lineas-diagonales{
+  background: repeating-linear-gradient( 45deg, rgb(45 10 10) 2px, rgb(0 0 0) 4px, #0e4a50 4px, #000000fc 6px );
+}
+
+.card {
+  width: 400px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.card__content {
+  text-align: center;
+  position: relative;
+  padding: 15em 5em;
+  transition: transform 3s;
+
+  transform-style: preserve-3d;
+}
+
+.card:hover .card__content {
+  transform: rotateY(.5turn);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__front {
+    /* background: #d19dff; */
+    background-image: url(https://www.sportmagazine.it/wp-content/uploads/2021/12/Faker.png);
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__front::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+.card__title {
+  font-size: 3.5rem;
+  transform: var(--level-three);
+  order: 2;
+  text-transform: uppercase;
+  font-family: 'Poppins';
+  color: white;
+}
+
+.card__subtitle {
+  transform: var(--level-two);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1.4rem;
+  font-weight: var(--fw-bold);
+  /* opacity: ; */
+  font-weight: bold;
+  font-family: 'Poppins';
+  color: white;
+}
+
+.card__body {
+  transform: var(--level-two);
+  font-weight: var(fw-normal);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: rgb(0, 255, 47);
+}
+
+.card__back {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://estnn.com/wp-content/uploads/2019/04/skt-t1-neon-by-xcloud-zerox-d9p0tq9-1002914-747x420.jpg);
+  background-position: -173px -30px;
+  border: 3px solid black;
+}
+
+.card__back .card__body img {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.575));
+}
+
+
+.card_subtitle2 {
+    margin-top: 293px;
+    font-size: 18px;
+    color: white;
+    background: radial-gradient(black, transparent);
+}
+
+
+
+
+.frontt{
+  background: radial-gradient(rgb(114, 72, 72), transparent);
+}
+
+
+/*CARD DE SMEB*/
+
+
+.card__frontsmeb,
+.card__backsmeb {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontsmeb {
+    /* background: #d19dff; */
+    background-image: url(https://snowballesports.com/wp-content/uploads/2020/06/smeb-returns-ftimg-s.jpg);
+    background-position: -50px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__backsmeb {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(http://pm1.narvii.com/6293/3e0ebc3a0c88bc41c9a267ddc8f00c4776530204_00.jpg);
+  background-position: 5px 0px;
+  border: 3px solid black;
+}
+
+
+
+.card__frontsmeb::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2smeb {
+  background-color: black;
+  margin-top: 315px;
+  font-size: 18px;
+  color: white;
+  /* background: radial-gradient(red, transparent); */
+}
+
+
+
+
+
+
+
+/*CARD DE BENGI*/
+
+
+
+.card__frontbengi,
+.card__backbengi {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontbengi {
+    /* background: #d19dff; */
+    background-image: url(https://esports.eldesmarque.com/wp-content/uploads/2017/06/bengi.jpg);
+    background-position: -50px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__backbengi {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://estnn.com/wp-content/uploads/2019/04/skt-t1-neon-by-xcloud-zerox-d9p0tq9-1002914-747x420.jpg);
+  background-position: -173px -30px;
+  border: 3px solid black;
+}
+
+
+
+.card__frontbengi::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2bengi {
+  margin-top: 273px;
+    font-size: 18px;
+    color: white;
+    background: radial-gradient(black, transparent);
+}
+
+
+
+
+/*CARD DE RULER*/
+
+
+
+.card__frontruler,
+.card__backruler {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontruler {
+    /* background: #d19dff; */
+    background-image: url(https://www.esportmaniacos.com/wp-content/uploads/2022/07/52233862478_9c87808918_k-1.jpg);
+    background-position: -50px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__backruler{
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://esports.as.com/2021/11/24/league-of-legends/GenG_1522657738_852545_1440x600.jpg);
+  background-position: -520px -147px;
+  border: 3px solid black;
+}
+
+
+
+.card__frontruler::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2ruler {
+  margin-top: 273px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, transparent);
+}
+
+
+
+/*CARD DE WOLF*/
+
+
+
+
+.card__frontwolf,
+.card__backwolf {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontwolf {
+    /* background: #d19dff; */
+    background-image: url(https://esportbet.com/wp-content/uploads/2019/12/wolf.jpg);
+    background-position: -334px 3px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__backwolf {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://estnn.com/wp-content/uploads/2019/04/skt-t1-neon-by-xcloud-zerox-d9p0tq9-1002914-747x420.jpg);
+  background-position: -173px -30px;
+  border: 3px solid black;
+}
+
+
+
+.card__frontwolf::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2wolf {
+  margin-top: 273px;
+    font-size: 18px;
+    color: white;
+    background: radial-gradient(black, transparent);
+}
+
+
+
+
+/*<--------------------------------- LPL --------------------------------->*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CARD DE THESHY*/
+
+
+
+
+.card__backtheshy {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/331/533/291/royal-never-give-up-league-of-legends-esport-e-sport-hd-wallpaper-preview.jpg);
+  background-position: -173px -30px;
+  border: 3px solid black;
+}
+
+
+
+
+
+.card__fronttheshy,
+.card__backtheshy {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__fronttheshy {
+    /* background: #d19dff; */
+    background-image: url(https://a.espncdn.com/photo/2019/0516/r544093_1296x729_16-9.jpg);
+    background-position: -150px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__fronttheshy::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2theshy {
+  margin-top: 230px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, transparent);
+}
+
+
+
+
+
+.card__backtheshy {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://csbets.org/blog/wp-content/uploads/2019/10/Wallpaper-iG.jpg);
+      background-position: -120px 40px;
+  border: 3px solid black;
+}
+
+
+
+/*CARD DE CLEARLOVE*/
+
+
+
+.card__backclearlove {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/331/533/291/royal-never-give-up-league-of-legends-esport-e-sport-hd-wallpaper-preview.jpg);
+  background-position: -173px -30px;
+  border: 3px solid black;
+}
+
+
+
+
+
+.card__frontclearlove,
+.card__backclearlove {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontclearlove {
+    /* background: #d19dff; */
+    background-image: url(https://cdn.beahero.gg/2020/12/37519252942_a4b1a67c51_k.jpg);
+    background-position: -150px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__frontclearlove::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2clearlove {
+  margin-top: 290px;
+  font-size: 18px;
+  color: white;
+  /* background: radial-gradient(black, transparent); */
+  background-color: black;
+}
+
+
+
+
+
+.card__backclearlove {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://esportbet.com/wp-content/uploads/2022/08/EDG.jpg);
+  background-position: -402px -180px;
+  border: 3px solid black;
+}
+
+
+.card__titleclear {
+  font-size: 3rem;
+  transform: var(--level-three);
+  order: 2;
+  text-transform: uppercase;
+  font-family: 'Poppins';
+  color: white;
+}
+
+
+
+
+
+
+/*CARD DE ROOKIE*/
+
+
+.card__backrookie {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/331/533/291/royal-never-give-up-league-of-legends-esport-e-sport-hd-wallpaper-preview.jpg);
+  background-position: -173px -30px;
+  border: 3px solid black;
+}
+
+
+
+
+
+.card__frontrookie,
+.card__backrookie {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontrookie {
+    /* background: #d19dff; */
+    background-image: url(https://cdn.oneesports.gg/cdn-data/wp-content/uploads/2020/04/LeagueOfLegends_Worlds2018_InvictusGaming_Rookie.jpg);
+    background-position: -150px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__frontrookie::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2rookie {
+  margin-top: 230px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, transparent);
+}
+
+
+
+
+
+.card__backrookie {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://csbets.org/blog/wp-content/uploads/2019/10/Wallpaper-iG.jpg);
+      background-position: -120px 40px;
+  border: 3px solid black;
+}
+
+
+
+
+/*CARD DE UZI*/
+
+
+.card__backuzi {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/331/533/291/royal-never-give-up-league-of-legends-esport-e-sport-hd-wallpaper-preview.jpg);
+  background-position: -173px -30px;
+  border: 3px solid black;
+}
+
+
+
+
+
+.card__frontuzi,
+.card__backuzi {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontuzi {
+    /* background: #d19dff; */
+    background-image: url(https://s3-eu-central-1.amazonaws.com/www-staging.esports.com/WP%20Media%20Folder%20-%20esports-com//var/app/current/web/app/uploads/2020/06/Uzi.png);
+    background-position: -150px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__frontuzi::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2uzi {
+  margin-top: 230px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, transparent);
+}
+
+
+
+
+
+.card__backuzi {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/331/533/291/royal-never-give-up-league-of-legends-esport-e-sport-hd-wallpaper-preview.jpg);
+  background-position: -173px -30px;
+  border: 3px solid black;
+}
+
+
+
+
+/*CARD DE MING*/
+
+
+.card__backming {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/331/533/291/royal-never-give-up-league-of-legends-esport-e-sport-hd-wallpaper-preview.jpg);
+  background-position: -173px -30px;
+  border: 3px solid black;
+}
+
+
+
+
+
+.card__frontming,
+.card__backming {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontming {
+    /* background: #d19dff; */
+    background-image: url(https://live.staticflickr.com/970/42102660651_b29818d94d_b.jpg);
+    background-position: -150px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__frontming::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2ming {
+  margin-top: 230px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, transparent);
+}
+
+
+
+
+
+.card__backming {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/331/533/291/royal-never-give-up-league-of-legends-esport-e-sport-hd-wallpaper-preview.jpg);
+  background-position: -173px -30px;
+  border: 3px solid black;
+}
+
+
+
+
+
+
+
+/*<--------------------------------- LEC --------------------------------->*/
+
+
+
+/*CARD DE SOAZ*/
+
+
+
+
+
+
+
+.card__frontsoaz,
+.card__backsoaz {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontsoaz {
+    /* background: #d19dff; */
+    background-image: url(https://cdn1.dotesports.com/wp-content/uploads/2019/11/20180456/40271106960_dbeaeff709_k.jpg);
+    background-position: -46px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__frontsoaz::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2soaz {
+  margin-top: 230px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, transparent);
+}
+
+
+
+
+
+.card__backsoaz {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/422a54fa-c671-45de-ae9a-ee423f18c4a8/dakv1mb-53364422-b70c-4185-83d3-12a8d9f76d00.jpg/v1/fill/w_600,h_1067,q_75,strp/league_of_legends_phone_wallpaper_fnatic_by_itsnostalgiic_dakv1mb-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA2NyIsInBhdGgiOiJcL2ZcLzQyMmE1NGZhLWM2NzEtNDVkZS1hZTlhLWVlNDIzZjE4YzRhOFwvZGFrdjFtYi01MzM2NDQyMi1iNzBjLTQxODUtODNkMy0xMmE4ZDlmNzZkMDAuanBnIiwid2lkdGgiOiI8PTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Em6a-jdxBaWU55ZY-YSaFf6h3ZwIpqyKbE4jI2PA6yQ);
+  background-position: -108px -252px;
+  border: 3px solid black;
+}
+
+
+
+
+/*CARD DE JANKOS*/
+
+
+
+.card__frontjankos,
+.card__backjankos {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontjankos {
+    /* background: #d19dff; */
+    background-image: url(https://www.esportmaniacos.com/wp-content/uploads/2021/06/1613749327_original.jpg);
+    background-position: -120px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__frontjankos::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2jankos {
+  margin-top: 230px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, rgb(0 0 0 / 57%));
+}
+
+
+
+
+
+.card__backjankos {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://esports.as.com/2020/04/28/bonus/G2-Esports_1350175003_384067_1440x810.jpg);
+  background-position: -523px -207px;
+  border: 3px solid black;
+}
+
+
+
+/*CARD DE CAPS*/
+
+
+
+.card__frontcaps,
+.card__backcaps {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontcaps {
+    /* background: #d19dff; */
+    background-image: url(https://cdn1.dotesports.com/wp-content/uploads/2021/09/02131230/Caps.png);
+    background-position: -120px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__frontcaps::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2caps {
+  margin-top: 200px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, rgb(0 0 0 / 57%));
+}
+
+
+
+
+
+.card__backcaps {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://esports.as.com/2020/04/28/bonus/G2-Esports_1350175003_384067_1440x810.jpg);
+  background-position: -523px -207px;
+  border: 3px solid black;
+}
+
+
+
+
+/*CARD DE REKKLES*/
+
+
+.card__frontrekkles,
+.card__backrekkles {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontrekkles {
+    /* background: #d19dff; */
+    background-image: url(https://cabanadoleitor.com.br/wp-content/uploads/2020/11/rekkles-fnatic.jpg);
+    background-position: -176px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__frontrekkles::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2rekkles {
+  margin-top: 230px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, transparent);
+}
+
+
+
+
+
+.card__backrekkles {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/422a54fa-c671-45de-ae9a-ee423f18c4a8/dakv1mb-53364422-b70c-4185-83d3-12a8d9f76d00.jpg/v1/fill/w_600,h_1067,q_75,strp/league_of_legends_phone_wallpaper_fnatic_by_itsnostalgiic_dakv1mb-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA2NyIsInBhdGgiOiJcL2ZcLzQyMmE1NGZhLWM2NzEtNDVkZS1hZTlhLWVlNDIzZjE4YzRhOFwvZGFrdjFtYi01MzM2NDQyMi1iNzBjLTQxODUtODNkMy0xMmE4ZDlmNzZkMDAuanBnIiwid2lkdGgiOiI8PTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Em6a-jdxBaWU55ZY-YSaFf6h3ZwIpqyKbE4jI2PA6yQ);
+  background-position: -108px -252px;
+  border: 3px solid black;
+}
+
+
+
+
+
+
+/*CARD DE MIKYX*/
+
+
+
+
+.card__frontmikyx,
+.card__backmikyx {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontmikyx {
+    /* background: #d19dff; */
+    background-image: url(https://www.esportmaniacos.com/wp-content/uploads/2022/01/51007153070_6c4448285c_k-1.jpg);
+    background-position: -120px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__frontmikyx::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2mikyx {
+  margin-top: 200px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, rgb(0 0 0 / 57%));
+}
+
+
+
+
+
+.card__backmikyx {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://esports.as.com/2020/04/28/bonus/G2-Esports_1350175003_384067_1440x810.jpg);
+  background-position: -523px -207px;
+  border: 3px solid black;
+}
+
+
+
+/*-------------------------------LCS-------------------------------*/
+
+
+
+/*CARD DE IMPACT*/
+
+
+
+
+.card__frontimpact,
+.card__backimpact {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontimpact {
+    /* background: #d19dff; */
+    background-image: url(https://static.invenglobal.com/upload/image/2018/09/06/o1536285023455299.jpeg);
+    background-position: -120px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__frontimpact::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2impact {
+  margin-top: 180px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, rgb(0 0 0 / 57%));
+}
+
+
+
+
+
+.card__backimpact {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://cdn.ome.lt/9MZ6xKUur-xH3FuVtRP2IE_aViQ=/1200x630/smart/extras/conteudos/team-liquid.jpg);
+  background-position: -302px -120px;
+  border: 3px solid black;
+}
+
+
+/*CARD DE XMITHIE*/
+
+
+.card__frontxmiti,
+.card__backxmiti {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontxmiti {
+    /* background: #d19dff; */
+    background-image: url(https://live.staticflickr.com/4702/40349856211_ebed7787f8_b.jpg);
+    background-position: -120px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__frontxmiti::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2xmiti {
+  margin-top: 230px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, rgb(0 0 0 / 57%));
+}
+
+
+
+
+
+.card__backxmiti {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://cdn.ome.lt/9MZ6xKUur-xH3FuVtRP2IE_aViQ=/1200x630/smart/extras/conteudos/team-liquid.jpg);
+  background-position: -302px -120px;
+  border: 3px solid black;
+}
+
+
+
+/*CARD DE BJERGSEN*/
+
+
+.card__frontbje,
+.card__backbje {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontbje {
+    /* background: #d19dff; */
+    background-image: url(https://staticg.sportskeeda.com/editor/2020/10/ad527-16035568326406-800.jpg);
+    background-position: -120px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__frontbje::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2bje {
+  margin-top: 200px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, rgb(0 0 0 / 57%));
+}
+
+
+
+
+
+.card__backbje {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://i.pinimg.com/736x/95/43/9d/95439d406c09da3eb8996feec75054d1--wallpaper-link.jpg);
+  background-position: -183px 5px;
+  border: 3px solid black;
+}
+
+
+
+/*CARD DE DOUBLELIFFT*/
+
+
+
+.card__frontdoble,
+.card__backdoble {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontdoble {
+    /* background: #d19dff; */
+    background-image: url(https://www.gamerfocus.co/wp-content/uploads/2020/11/doublelift.jpg);
+    background-position: -120px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__frontdoble::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2doble {
+  margin-top: 230px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, rgb(0 0 0 / 57%));
+}
+
+
+
+
+
+.card__backdoble {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://i.pinimg.com/736x/95/43/9d/95439d406c09da3eb8996feec75054d1--wallpaper-link.jpg);
+  background-position: -183px 5px;
+  border: 3px solid black;
+}
+
+
+
+/*CARD DE COREJJ*/
+
+
+
+
+.card__frontcore,
+.card__backcore {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+  border-radius: 5px;
+}
+
+.card__frontcore {
+    /* background: #d19dff; */
+    background-image: url(https://codigoesports.com/wp-content/uploads/2022/03/Groups_-Day2_455-1367x911-6bfe1f2.jpg);
+    background-position: -120px 0px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 22%);
+}
+
+.card__frontcore::before {
+  content: '';
+  position: absolute;
+  --spacer: 1em;
+  top: var(--spacer);
+  bottom: var(--spacer);
+  left: var(--spacer);
+  right: var(--spacer);
+  border: 3px solid currentColor;
+  transform: var(--level-one);
+  border-radius: 5px;
+}
+
+
+
+.card_subtitle2core {
+  margin-top: 150px;
+  font-size: 18px;
+  color: white;
+  background: radial-gradient(black, rgb(0 0 0 / 57%));
+}
+
+
+
+
+
+.card__backcore {
+  transform: rotateY(.5turn);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.219);
+  background-image: url(https://cdn.ome.lt/9MZ6xKUur-xH3FuVtRP2IE_aViQ=/1200x630/smart/extras/conteudos/team-liquid.jpg);
+  background-position: -302px -120px;
+  border: 3px solid black;
+}
+
+
+
+
+
+/*-----------------------------------------ESTILO DE LINEAS-----------------------------------------------*/
+
+
+.linea {
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  color: ivory;
+  width: 300px;
+  margin-top: 200px;
+  background-color: darkslategrey;
+}
+
+
+table {
+  /* font-family: arial, sans-serif; */
+  margin-left: 50px;
+  margin-right: 50px;
+  /* width: 992px; */
+  height: 400px;
+  margin-top: 30px;
+}
+
+td, th {
+  
+  text-align: center;
+  padding: 19px;
+  padding-top: 30px;
+  border: 1px solid white;
+}
+
+th {
+  color: yellow;
+  background: radial-gradient(#000000b3, #000000c4);
+}
+td {
+  color: aqua;
+  background: radial-gradient(#000000b3, #000000c4);
+}
+
+.separador{
+  display: flex;
+  border: 5px solid royalblue;
+  border-radius: 3px;
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+h4 {
+  display: flex;
+  /* justify-content: start; */
+  margin-left: 50px;
+  /* margin-top: 110px; */
+  margin-top: 27px;
+  color: fuchsia;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+.hover {
+  margin-top: 850px;
+  width: 448px;
+    height: 261px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  top: 50%;
+  left: 33.5%;
+  transition: all 300ms ease 0s;
+}
+
+.hover:hover{
+  box-shadow: 0px 0px 30px -5px black; 
+}
+
+.hover img{
+  width: 448px;
+  height: 261px;
+  transition: all 300ms;
+}
+
+.hover:hover img{
+  transform: scale(1.6) rotate(10deg);
+}
+
+.hover h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: white;
+  z-index: 2;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  border: 2px solid white;
+  background: black;
+  padding: 6px
+}
+
+.hover:hover h1{
+   transform: translate(-50%, -50%) scale(1);
+}
+
+.hover:before,
+.hover:after{
+  content: '';
+  width: 448px;
+    height: 261px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.6;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  border: 4px solid white;
+  z-index: 1;
+}
+
+.hover:before{
+  transform: rotate(45deg) translateY(-550px) translateX(0px);
+}
+
+.hover:after{
+  transform: rotate(45deg) translateY(550px) translateX(-60px);
+}
+
+.hover:hover:before{
+  transform: rotate(45deg) translateY(-240px) translateX(0px);
+}
+
+.hover:hover:after{
+  transform: rotate(45deg) translateY(180px) translateX(-80px);
+}
+
+
+
+
+
+.titulo {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+  margin-top: 95px;
+  color: cyan;
+ 
+}
+p span {
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: 0.25em 0 0.325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgb(240, 6, 6);
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  animation: aitf 80s linear infinite;
+}
+
+
+@keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+
+.margintitulo{
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+.hover3 {
+  margin-top: 800px;
+  width: 448px;
+    height: 261px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  top: 50%;
+  left: 33.5%;
+  /* transform: translate(-50%, 100%); */
+  transition: all 300ms;
+  
+}
+
+.hover3:hover{
+  box-shadow: 0px 0px 30px -5px black; 
+}
+
+.hover img {
+  width: 100%;
+  height: 100%;
+  transition: all 300ms;
+}
+
+
+.hover3:hover img{
+  transform: scale(1.6) rotate(10deg);
+}
+
+.hover3 h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: white;
+  z-index: 2;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  border: 2px solid white;
+  background: black;
+  padding: 6px;
+  background-image: url(/img/lck.jpg);
+}
+
+.hover3:hover h1{
+   transform: translate(-50%, -50%) scale(1);
+}
+
+.hover3:before,
+.hover3:after{
+  content: '';
+  width: 448px;
+    height: 261px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.6;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  border: 4px solid white;
+  z-index: 1;
+}
+
+.hover3:before{
+  transform: rotate(45deg) translateY(-550px) translateX(0px);
+}
+
+.hover3:after{
+  transform: rotate(45deg) translateY(550px) translateX(-60px);
+}
+
+.hover3:hover:before{
+  transform: rotate(45deg) translateY(-240px) translateX(0px);
+}
+
+.hover3:hover:after{
+  transform: rotate(45deg) translateY(180px) translateX(-80px);
+}
+
+
+
+
+
+
+.container {
+  width: 1000px;
+  height: 550px;
+  border-radius: 20px;
+  position: relative;
+  transition: 1.5s ease-in-out;
+  transform-style: preserve-3d; 
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.side {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px 50px;
+	color: #fff;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-radius: 20px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-bottom: 98px; */
+  padding-bottom: -95px;
+  width: 100%; 
+  height: 117px;
+}
+.content h1 {
+	position: relative;
+}
+.content p {
+	
+	line-height: 2em;
+}
+.content h1:before {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	height: 3px;
+	
+	width: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.front {
+	z-index: 2;
+	
+	background-size: cover;
+  
+	background-image: url(https://cdn1.dotesports.com/wp-content/uploads/2020/05/29010226/31567258358_81f8c2b7c3_k.jpg);
+}
+.back {
+	background-color: #333;
+	transform: rotateY(180deg);
+	z-index: 0;
+	padding-top: 10px;
+	background-image: url(/img/lck.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -309px  0px;
+}
+.container:hover {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+form {
+	text-align: left;
+}
+.back h1 {
+	margin: 0;
+}
+form label,
+form input {
+	display: block;
+}
+form input,
+form textarea {
+	background: transparent;
+	border: 0;
+	border-bottom: 2px solid #444;
+	padding: 5px;
+	width: 100%;
+	color: #fff;
+}
+form label {
+	margin: 15px 0;
+}
+form input[type="submit"] {
+	display: block;
+	width: auto;
+	margin: 10px auto;
+	padding: 5px 10px;
+	border: 3px solid #555;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+}
+/* my button style  */
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #fff;
+	transition: 0.35s ease-in-out;
+	position: fixed;
+	left: 15px;
+	bottom: 15px;
+	font-family: "Montserrat";
+}
+
+.white-mode:hover {
+	background-color: #fff;
+	color: #122;
+}
+
+.centrar{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lane {
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(rgba(0, 0, 0, 0.99), rgba(29, 40, 71, 0.99));
+  border-radius: 10px;
+  width: 400px;
+  padding: 14px;
+  color: aliceblue;
+}
+
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.card_subtitle2smeb {
+  margin-top: 372px;
+  font-size: 18px;
+  color: aqua;
+  background: radial-gradient(#000000fc, #1d2847fc);
+  border-radius: 23px;
+  padding: 3px
+}
+
+
+
+.frontbengi {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://as.com/esports/imagenes/2017/05/12/league_of_legends/1494591621_143604_1494591842_noticia_normal.jpg);
+}
+
+
+.frontfaker {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://media.tycsports.com/files/2021/10/26/350657/faker_1440x810_wmk.jpg?v=1);
+}
+
+
+
+.frontruler {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://as.com/esports/imagenes/2017/10/06/league_of_legends/1507290622_673363_1507290836_noticia_normal.jpg);
+}
+
+
+
+.frontwolf {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://s.newtalk.tw/album/news/175/5c0354bf89c8f.jpg);
+}
+
+
+
+
+
+.backchina {
+	background-color: #333;
+	transform: rotateY(180deg);
+	z-index: 0;
+	padding-top: 10px;
+	background-image: url(/img/lpl.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px  0px;
+}
+
+
+
+
+.fronttheshy {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://cdn.beahero.gg/2019/10/maxresdefault-2-2.jpg);
+}
+
+.card_subtitle2theshy{
+  margin-top: 330px;
+  font-size: 18px;
+  color: aqua;
+  background: radial-gradient(#000000fc, #1d2847fc);
+  border-radius: 23px;
+  padding: 3px;
+}
+
+
+
+
+
+.frontclear {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://image.thanhnien.vn/w1024/Uploaded/2022/keqi/st.game.thanhnien.com.vn/image/go/kd/clearlove-lmht-edg-06.jpg);
+}
+
+
+
+
+
+.frontrookie {
+  z-index: 2;
+  background-size: 100% 100%;
+  background-image: url(https://echan-world.com/wp-content/uploads/2018/12/20180522012625802.png);
+  
+  background-repeat: no-repeat;
+}
+
+
+
+.frontuzi {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://cdn.oneesports.gg/cdn-data/wp-content/uploads/2020/06/LeagueOfLegends_MSI2018_Final_Uzi.jpg);
+}
+
+
+.frontming {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://noticias.maisesports.com.br/wp-content/uploads/2022/03/ming-msi-2021.jpg);
+}
+
+
+
+
+.backeuropa {
+	background-color: #333;
+	transform: rotateY(180deg);
+	z-index: 0;
+	padding-top: 10px;
+	background-image: url(/img/lec.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px  0px;
+}
+
+
+
+.frontsoaz {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://esports.as.com/2019/07/22/league-of-legends/lec/SOAZ-Misfits_1265883422_234927_1440x810.jpg);
+}
+
+
+.frontjankos {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2019/04/16/11df69b8-85d8-409f-b6cc-afccfac711e5/g2-esports-jankos-lec-finales);
+}
+
+
+.card_subtitle2jankos{
+  margin-top: 330px;
+  font-size: 18px;
+  color: aqua;
+  background: radial-gradient(#000000fc, #1d2847fc);
+  border-radius: 23px;
+  padding: 3px;
+}
+
+
+.frontcaps {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://esports.as.com/2019/02/15/lec/Caps-jugadores-destacados-LEC_1218788117_736335_1024x576.jpg);
+}
+
+.card_subtitle2caps{
+  margin-top: 300px;
+  font-size: 18px;
+  color: aqua;
+  background: radial-gradient(#000000fc, #1d2847fc);
+  border-radius: 23px;
+  padding: 3px;
+}
+
+
+
+
+
+
+.frontrekkles {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://i.vietgiaitri.com/2022/6/12/lec-bi-vuot-mat-boi-su-kien-tam-co-cktg-do-team-cua-rekkles-to-chuc-041-6488416.jpg);
+}
+
+.card_subtitle2rekkles{
+  margin-top: 300px;
+  font-size: 18px;
+  color: aqua;
+  background: radial-gradient(#000000fc, #1d2847fc);
+  border-radius: 23px;
+  padding: 3px;
+}
+
+
+
+
+.frontmikyx {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2019/09/17/f21c0823-cab5-420f-8ded-56879a166269/mikyx-lec-finals-athensg);
+}
+
+.card_subtitle2mikyx{
+  margin-top: 330px;
+  font-size: 18px;
+  color: aqua;
+  background: radial-gradient(#000000fc, #1d2847fc);
+  border-radius: 23px;
+  padding: 3px;
+}
+
+
+
+
+.backamerica {
+	background-color: #333;
+	transform: rotateY(180deg);
+	z-index: 0;
+	padding-top: 10px;
+	background-image: url(/img/naaaa.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px  -60px;
+}
+
+
+
+.frontimpact {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://live.staticflickr.com/2516/32708545301_07eebe49af_b.jpg);
+}
+
+
+.card_subtitle2impact{
+  margin-top: 300px;
+  font-size: 18px;
+  color: aqua;
+  background: radial-gradient(#000000fc, #1d2847fc);
+  border-radius: 23px;
+  padding: 3px;
+}
+
+
+.frontmiti {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://cdn1.dotesports.com/wp-content/uploads/2019/05/18030732/32925495487_cd7e3b969c_k.jpg);
+}
+
+
+.frontbjger {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://static1-es.millenium.gg/articles/2/42/43/2/@/220696-bjergsen-tsm-article_cover_bd-1.jpg);
+}
+
+
+.frontdoble {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://scontent.fros1-1.fna.fbcdn.net/v/t31.18172-8/1921168_475884912584371_7666230523508039771_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=9267fe&_nc_ohc=CqfUQXsSGHoAX8eJhA7&_nc_ht=scontent.fros1-1.fna&oh=00_AfAuDwDrEbCRJWV2hDJ6ASx7sWDWD6NLAR78bz0orIkglw&oe=63948CBB);
+}
+
+
+.card_subtitle2doble{
+  margin-top: 295px;
+  font-size: 18px;
+  color: aqua;
+  background: radial-gradient(#000000fc, #1d2847fc);
+  border-radius: 23px;
+  padding: 3px;
+}
+
+
+
+.frontcore {
+  z-index: 2;
+  background-size: cover;
+  background-image: url(https://cdn1.dotesports.com/wp-content/uploads/2019/10/29080917/46051886205_0ac0fd7c11_k.jpg);
+}
+
+
+
+.card_subtitle2core{
+  margin-top: 335px;
+  font-size: 18px;
+  color: aqua;
+  background: radial-gradient(#000000fc, #1d2847fc);
+  border-radius: 23px;
+  padding: 3px;}
+
+
+  iframe{
+    margin-top: 40px;
+    border-radius: 19px;
+  }
+
+
+
+
+
+
+  
+  #box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 680px;
+    height: 490px;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 2.5rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+.gradient-border {
+  --borderWidth: 3px;
+  
+  position: relative;
+  border-radius: var(--borderWidth);
+  display: flex;
+  flex-direction: column;
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #06050a, #272141, #06050a);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+ 
+
+h5{
+  font-family: "old standard tt", georgia, "times new roman", serif;
+  color: cyan;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 18px;
+  padding: 5px;
+  padding-left: 21px;
+  padding-right: 21px;
+}   
+
+p{
+  font-family: "old standard tt", georgia, "times new roman", serif;
+}
+
+
+
+
+.imagen {
+  max-width: 100%;
+}
+
+.container1 {
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.player {
+  margin-top: 731px;
+  width: 300px;
+  height: 550px;
+  background-color: #e0e5ec;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.player__controls {
+  display: flex;
+  width: 95%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.player__btn {
+  cursor: pointer;
+  border-radius: 21%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9,
+    8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+  color: var(--gray);
+}
+
+.player__btn:active {
+  box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
+    inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+}
+
+.player__btn--small {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.player__title {
+  font-weight: 600;
+  font-size: 0.8em;
+  color: #a1a1a1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.player__album {
+  width: 150px;
+}
+
+.player__imagen {
+  border-radius: 50%;
+  box-shadow: 2px 2px 7px rgb(163, 177, 198), -2px -2px 7px rgb(163, 177, 198),
+    -8px -8px 50px rgba(255, 255, 255, 0.8), 3px 3px 25px rgba(0, 0, 0, 0.6);
+}
+
+.player__artist {
+  font-size: 1.2em;
+  font-weight: 500;
+  opacity: 0.5;
+  margin: 20px 0px 0px 0px;
+}
+
+.player__song {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1em;
+  opacity: 0.5;
+  margin: 0;
+}
+
+.player__level {
+  width: 80%;
+  
+  
+  outline: none;
+  border: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.player__level::-webkit-slider-runnable-track {
+  background-color: #d7dbdd;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.player__level::-webkit-slider-thumb {
+  
+  border-radius: 100%;
+  background-color: #5c87fe;
+  height: 18px;
+  width: 18px;
+  margin-top: -7px;
+}
+
+.audio-duration {
+  margin-top: -30px;
+  display: flex;
+  width: 78%;
+  font-size: 10px;
+  font-weight: 600;
+  color: #a1a1a1;
+  letter-spacing: 1px;
+}
+
+.start {
+  flex: 1;
+}
+
+.player__audio {
+  visibility: hidden;
+}
+
+.player__btn--medium {
+  min-height: 70px;
+  min-width: 70px;
+}
+
+.blue {
+  background-color: #5c87fe;
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+
+.fas{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.fa-forward:before {
+  content: url(/img/fast_forward_icon_124972.png);
+}
+
+
+.player__btn--medium {
+  min-height: 70px;
+  min-width: 70px;
+}
+
+
+.fa-backward:before {
+  content: url("/img/backward_icon_125062.png");
+}
+
+
+.fa-play:before {
+  content: url("/img/eeeeee.png");
+}
